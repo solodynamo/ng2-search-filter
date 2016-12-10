@@ -7,7 +7,7 @@ Append to `map`
 ```js
 var map = {
     ...
-    'ng2-filter-pipe': 'node_modules/ng2-search-pipe'
+    'ng2-search-filter': 'node_modules/ng2-search-filter'
 }
 ```
 
@@ -16,6 +16,6 @@ and then add to `packages`
 ```js
 var packages = {
     ...
-    'ng2-search-pipe': { main: 'dist/index.js' }
+    'ng2-search-filter': { main: 'dist/index.js' }
 }
 ````
