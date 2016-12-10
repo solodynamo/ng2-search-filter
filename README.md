@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/ng2-search-filter.svg)](https://www.npmjs.com/package/ng2-search-filter) [![](https://david-dm.org/solodynamo/ng2-search-filter.svg)](https://www.npmjs.com/package/ng2-search-filter)
 
-> Filter arrays
+> Filter search items
 
 Angular 2 filter to make custom search.
 
