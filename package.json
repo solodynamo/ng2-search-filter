@@ -1,6 +1,6 @@
 {
   "name": "ng2-search-filter",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Angular 2 filter to make custom search",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -63,13 +63,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src",
-    "typings",
-    "index.ts",
-    "typings.json",
-    "tslint.json",
-    "tsconfig.json"
+    "dist"
   ],
   "author": "solodynamo",
   "license": "MIT",
