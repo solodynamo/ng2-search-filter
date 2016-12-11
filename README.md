@@ -6,6 +6,9 @@
 
 Angular 2 filter to make custom search.
 
+### Snap
+<img src="http://i.imgur.com/SoBfPCd.gifv" width="600" alt="Sky Blue"/>
+
 ## Install
 
 ```
