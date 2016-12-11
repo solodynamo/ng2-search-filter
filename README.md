@@ -6,7 +6,8 @@
 
 Angular 2 filter to make custom search.
 
-![](http://i.imgur.com/SoBfPCd.gifv)
+![demo-image](http://i.imgur.com/SoBfPCd.gif)
+
 
 ## Install
 
