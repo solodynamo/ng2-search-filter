@@ -1,7 +1,7 @@
 # Angular2 Search Filter Pipe
 
 [![npm version](https://badge.fury.io/js/ng2-search-filter.svg)](https://www.npmjs.com/package/ng2-search-filter) [![](https://david-dm.org/solodynamo/ng2-search-filter.svg)](https://www.npmjs.com/package/ng2-search-filter)
-[![](https://img.shields.io/badge/Downloads-500%2B-ff69b4.svg)](https://www.npmjs.com/package/ng2-search-filter)
+[![](https://img.shields.io/badge/Downloads-1000%2B-ff69b4.svg)](https://www.npmjs.com/package/ng2-search-filter)
 
 > Filter search items
 
