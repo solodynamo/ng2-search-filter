@@ -1,6 +1,6 @@
 {
   "name": "ng2-search-filter",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Angular 2 filter to make custom search",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
