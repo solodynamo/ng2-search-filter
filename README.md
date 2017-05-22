@@ -1,11 +1,11 @@
-# Angular2 Search Filter Pipe
+# Angular 2 / Angular 4 Search Filter Pipe
 
 [![npm version](https://badge.fury.io/js/ng2-search-filter.svg)](https://www.npmjs.com/package/ng2-search-filter) [![](https://david-dm.org/solodynamo/ng2-search-filter.svg)](https://www.npmjs.com/package/ng2-search-filter)
-[![](https://img.shields.io/badge/Downloads-1000%2B-ff69b4.svg)](https://www.npmjs.com/package/ng2-search-filter)
+[![](https://img.shields.io/badge/Downloads-3000%2B-ff69b4.svg)](https://www.npmjs.com/package/ng2-search-filter)
 
 > Filter search items
 
-Angular 2 filter to make custom search.
+Angular 2 filter to make custom search. Works with Angular 4 too.
 
 ![demo-image](http://i.imgur.com/dI5Mzvq.gif)
 
@@ -16,7 +16,9 @@ Angular 2 filter to make custom search.
 ```
 npm i ng2-search-filter --save
 ```
-
+```
+yarn add ng2-search-filter 
+```
 ## Usage
 
 In case you're using `systemjs` - see configuration [here](https://github.com/solodynamo/ng2-search-filter/blob/master/SYSTEMJS.md).

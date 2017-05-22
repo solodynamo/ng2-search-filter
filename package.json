@@ -13,12 +13,14 @@
     "url": "git+https://github.com/solodynamo/ng2-search-filter.git"
   },
   "keywords": [
+    "angular 2",
+    "angular 4",
     "angular2",
+    "angular4",
     "search",
     "filter",
     "ng2",
     "angular",
-    "filter",
     "pipe"
   ],
   "dependencies": {},
