@@ -64,7 +64,8 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "typings.json"
   ],
   "author": "solodynamo",
   "license": "MIT",
