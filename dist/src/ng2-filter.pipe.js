@@ -10,11 +10,23 @@ var core_1 = require("@angular/core");
 var Ng2SearchPipe = (function () {
     function Ng2SearchPipe() {
     }
+    /**
+     * @items = object from array
+     * @term = term's search
+     */
     Ng2SearchPipe.prototype.transform = function (items, term) {
         if (term === undefined)
             return items;
         return items.filter(function (item) {
-            return item.name.toLowerCase().includes(term.toLowerCase());
+            for (var property in item) {
+                if (item[property] === null) {
+                    continue;
+                }
+                if (item[property].toString().toLowerCase().includes(term.toLowerCase())) {
+                    return true;
+                }
+            }
+            return false;
         });
     };
     return Ng2SearchPipe;
