@@ -1,41 +1,29 @@
+
 {
-  "compilerOptions": {
-    "noImplicitAny": false,
-    "module": "commonjs",
-    "target": "es5",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "declaration": true,
-    "sourceMap": true,
-    "moduleResolution": "node",
-    "rootDir": ".",
-    "outDir": "./dist/",
-    "typeRoots": [
-      "node_modules/@types",
-      "node_modules"
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "declaration": false,
+        "outDir": "dist",
+        "lib": ["es2015", "dom"],
+        "moduleResolution": "node"
+    },
+    "files": [
+        "index.ts"
     ],
-    "types": [
-      "core-js",
-      "jasmine",
-      "selenium-webdriver",
-      "node",
-      "protractor",
-      "systemjs"
-    ]
-  },
-  "files": [
-    "index.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "example",
-    "examples",
-    "typings",
-    "aot"
-  ],
-  "angularCompilerOptions": {
-    "genDir": "aot",
-    "skipMetadataEmit" : false
-  }
+    "awesomeTypescriptLoaderOptions": {
+        "resolveGlobs": true,
+        "forkChecker": true
+    },
+    "angularCompilerOptions": {
+        "strictMetadataEmit": true
+    },
+    "compileOnSave": false,
+    "buildOnSave": false,
+    "atom": {
+        "rewriteTsconfig": false
+    }
 }

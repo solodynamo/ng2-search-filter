@@ -1,0 +1,17 @@
+[{
+    __symbolic: "module",
+    version: 3,
+    metadata: {},
+    exports: [{
+      from: "./dist/index"
+    }]
+  },
+  {
+    __symbolic: "module",
+    version: 1,
+    metadata: {},
+    exports: [{
+      from: "./dist/index"
+    }]
+  }
+]
