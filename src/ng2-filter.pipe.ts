@@ -13,6 +13,7 @@ export class Ng2SearchPipe implements PipeTransform {
    */
   transform(items: any, term: any): any {
     if (term === undefined) return items;
+    if (!items) return items;
 
     return items.filter(function(item) {
       for(let property in item){
