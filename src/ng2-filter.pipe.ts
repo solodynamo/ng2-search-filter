@@ -1,4 +1,4 @@
-import {Pipe, PipeTransform, Injectable} from "@angular/core";
+import { Pipe, PipeTransform, Injectable } from "@angular/core";
 
 @Pipe({
   name: 'filter',
@@ -8,18 +8,31 @@ import {Pipe, PipeTransform, Injectable} from "@angular/core";
 export class Ng2SearchPipe implements PipeTransform {
 
   /**
-   * @items = object from array
-   * @term = term's search
+   * @param items object from array
+   * @param term term's search
    */
-  transform(items: any, term: any): any {
-    if (term === undefined) return items;
+  transform(items: any, term: string): any {
+    if (!term || !items) return items;
 
-    return items.filter(function(item) {
-      for(let property in item){
-        if (item[property] === null){
+    return Ng2SearchPipe.filter(items, term);
+  }
+
+  /**
+   * 
+   * @param items List of items to filter
+   * @param term  a string term to compare with every property of the list
+   * 
+   */
+  static filter(items: Array<{ [key: string]: any }>, term: string): Array<{ [key: string]: any }> {
+
+    const toCompare = term.toLowerCase();
+
+    return items.filter(function (item) {
+      for (let property in item) {
+        if (item[property] === null) {
           continue;
         }
-        if(item[property].toString().toLowerCase().includes(term.toLowerCase())){
+        if (item[property].toString().toLowerCase().includes(toCompare)) {
           return true;
         }
       }

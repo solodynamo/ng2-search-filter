@@ -1,1 +1,0 @@
-{"version":3,"file":"ng2-filter.module.js","sourceRoot":"","sources":["../../src/ng2-filter.module.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAAyC;AACzC,qDAAkD;AAOlD,IAAa,mBAAmB;IAAhC;IAAmC,CAAC;IAAD,0BAAC;AAAD,CAAC,AAApC,IAAoC;AAAvB,mBAAmB;IAL/B,eAAQ,CAAC;QACR,YAAY,EAAE,CAAC,+BAAa,CAAC;QAC7B,OAAO,EAAE,CAAC,+BAAa,CAAC;KACzB,CAAC;GAEW,mBAAmB,CAAI;AAAvB,kDAAmB"}
