@@ -27,7 +27,7 @@ export class Ng2SearchPipe implements PipeTransform {
 
     const toCompare = term.toLowerCase();
 
-    return items.filter(function (item) {
+    return items.filter(function (item: any) {
       for (let property in item) {
         if (item[property] === null) {
           continue;
