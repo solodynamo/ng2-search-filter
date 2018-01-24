@@ -14,7 +14,7 @@ export class Ng2SearchPipe implements PipeTransform {
   transform(items: any, term: any): any {
     if (term === undefined) return items;
 
-    return items.filter(function(item) {
+    return items.filter(function(item: any) {
       for(let property in item){
         if (item[property] === null){
           continue;
