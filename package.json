@@ -1,10 +1,11 @@
 {
   "name": "ng2-search-filter",
-  "version": "0.3.1",
-  "description": "Angular 2 filter to make custom search",
+  "version": "0.4.0",
+  "description": "Angular 2/4/5 filter to make custom search",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "tests": "jasmine-ts src/**/*.spec.ts",
     "start": "ng server",
+    "build": "ng-packagr -p package.json",
     "postinstall": "typings install"
   },
   "repository": {
@@ -14,26 +15,29 @@
   "keywords": [
     "angular 2",
     "angular 4",
+    "angular 5",
     "angular2",
     "angular4",
+    "angular5",
     "search",
     "filter",
     "ng2",
     "angular",
     "pipe"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@angular/core": "^5.2.1"
+  },
   "devDependencies": {
     "@angular/common": "2.2.3",
     "@angular/compiler": "2.2.3",
     "@angular/compiler-cli": "2.2.3",
-    "@angular/core": "2.2.3",
     "@angular/forms": "2.2.3",
     "@angular/http": "2.2.3",
     "@angular/platform-browser": "2.2.3",
     "@angular/platform-browser-dynamic": "2.2.3",
     "@types/core-js": "^0.9.34",
-    "@types/jasmine": "^2.2.34",
+    "@types/jasmine": "^2.8.5",
     "@types/node": "^6.0.51",
     "@types/phantom": "0.0.29",
     "@types/protractor": "^1.5.20",
@@ -46,10 +50,12 @@
     "jasmine": "^2.5.2",
     "jasmine-core": "^2.5.2",
     "jasmine-spec-reporter": "^2.7.0",
+    "jasmine-ts": "^0.2.1",
     "karma": "^1.3.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.0.2",
     "material-design-lite": "^1.2.1",
+    "ng-packagr": "^1.6.0",
     "protractor": "^4.0.11",
     "reflect-metadata": "0.1.8",
     "rxjs": "5.0.0-rc.3",
@@ -67,6 +73,12 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/solodynamo/ng2-search-filter/issues"
+  },
+  "ngPackage": {
+    "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+    "lib": {
+      "entryFile": "public_api.ts"
+    }
   },
   "homepage": "https://github.com/solodynamo/ng2-search-filter#readme"
 }
