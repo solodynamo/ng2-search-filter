@@ -1,11 +1,11 @@
-# Angular 2 / Angular 4 Search Filter Pipe
+# Angular 2 / Angular 4 / Angular 5 Search Filter Pipe
 
-[![npm version](https://badge.fury.io/js/ng2-search-filter.svg)](https://www.npmjs.com/package/ng2-search-filter) [![](https://david-dm.org/solodynamo/ng2-search-filter.svg)](https://www.npmjs.com/package/ng2-search-filter)
-[![](https://img.shields.io/badge/Downloads-3000%2B-ff69b4.svg)](https://www.npmjs.com/package/ng2-search-filter)
+[![npm version](https://img.shields.io/badge/version-0.4.0-blue.svg)](https://www.npmjs.com/package/ng2-search-filter) [![](https://david-dm.org/solodynamo/ng2-search-filter.svg)](https://www.npmjs.com/package/ng2-search-filter)
+[![](https://img.shields.io/badge/downloads-24K%2B-red.svg)](https://www.npmjs.com/package/ng2-search-filter)
 
 > Filter search items
 
-Angular 2 filter to make custom search. Works with Angular 4 too.
+Angular 2 filter to make custom search. Works with Angular 4 and Angular 5 too.
 
 ![demo-image](http://i.imgur.com/dI5Mzvq.gif)
 
