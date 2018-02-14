@@ -1,4 +1,4 @@
-src
+./src
 typings
 node_modules
 .editorconfig
