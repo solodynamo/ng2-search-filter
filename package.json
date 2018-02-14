@@ -5,8 +5,7 @@
   "scripts": {
     "tests": "jasmine-ts src/**/*.spec.ts",
     "start": "ng server",
-    "build": "ng-packagr -p package.json",
-    "postinstall": "typings install"
+    "build": "ng-packagr -p package.json"
   },
   "repository": {
     "type": "git",
