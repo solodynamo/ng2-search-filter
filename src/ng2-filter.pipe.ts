@@ -18,10 +18,10 @@ export class Ng2SearchPipe implements PipeTransform {
   }
 
   /**
-   * 
+   *
    * @param items List of items to filter
    * @param term  a string term to compare with every property of the list
-   * 
+   *
    */
   static filter(items: Array<{ [key: string]: any }>, term: string): Array<{ [key: string]: any }> {
 
@@ -29,7 +29,7 @@ export class Ng2SearchPipe implements PipeTransform {
 
     return items.filter(function (item: any) {
       for (let property in item) {
-        if (item[property] === null) {
+        if (item[property] === null || item[property] == undefined) {
           continue;
         }
         if (item[property].toString().toLowerCase().includes(toCompare)) {
