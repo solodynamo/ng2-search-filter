@@ -65,6 +65,14 @@ export class AppComponent {
 }
 ```
 
+## Support ng2-search-filter
+
+ng2-search-filter is completely free and open-source. If you find it useful, you can show your support by 🌟 it or sharing it in your social network.
+
+## Contribute
+
+Please do 🙂
+
 ## License
 
 [MIT](https://tldrlegal.com/license/mit-license) © [Solodynamo](https://github.com/solodynamo/ng2-search-filter)
