@@ -8,9 +8,9 @@ import { Pipe, PipeTransform, Injectable } from "@angular/core";
 export class Ng2SearchPipe implements PipeTransform {
 
   /**
-   * @param items object from array
-   * @param term term's search
-   */
+     * @param items object from array
+     * @param term term's search
+     */
   transform(items: any, term: string): any {
     if (!term || !items) return items;
 
@@ -27,16 +27,25 @@ export class Ng2SearchPipe implements PipeTransform {
 
     const toCompare = term.toLowerCase();
 
-    return items.filter(function (item: any) {
+    function checkInside(item: any, term: string) {
       for (let property in item) {
         if (item[property] === null || item[property] == undefined) {
           continue;
+        }
+        if (typeof item[property] === 'object') {
+          if (checkInside(item[property], term)) {
+            return true;
+          }
         }
         if (item[property].toString().toLowerCase().includes(toCompare)) {
           return true;
         }
       }
       return false;
+    }
+
+    return items.filter(function (item) {
+      return checkInside(item, term);
     });
   }
 }

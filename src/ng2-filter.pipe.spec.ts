@@ -24,4 +24,9 @@ describe('Pipe: Default', () => {
         const list = [{ a: 'b' }, { a: 'c' }];
         expect(pipe.transform(list, 'b')).toEqual([{ a: 'b' }]);
     });
+
+    it('Filter the nested object', () => {
+        const list = [{ a: 'e' }, { a: { b: 'd' , c: { b : 'd' }}}];
+        expect(pipe.transform(list, 'd')).toEqual([{ a: { b: 'd', c: { b : 'd' }}}]);
+    });
 });
