@@ -1,11 +1,12 @@
 {
   "name": "ng2-search-filter",
-  "version": "0.4.9",
+  "version": "0.5.1",
   "description": "Angular 2/4/5 filter to make custom search",
   "scripts": {
     "tests": "jasmine-ts src/**/*.spec.ts",
     "start": "ng server",
-    "build": "ng-packagr -p package.json"
+    "build": "ng-packagr -p package.json",
+    "publish": "npm publish dist"
   },
   "repository": {
     "type": "git",
