@@ -29,4 +29,9 @@ describe('Pipe: Default', () => {
         const list = [{ a: 'e' }, { a: { b: 'e' , c: { b : 'd' }}}];
         expect(pipe.transform(list, 'd')).toEqual([{ a: { b: 'e', c: { b : 'd' }}}]);
     });
+
+    it('Ignore the property in the search', () => {
+        const list = [{ a: 'e' }, { a: { b: 'e' , c: { b : 'd' }}}];
+        expect(pipe.transform(list, 'e', ['b'])).toEqual([{ a: 'e' }]);
+    });
 });
