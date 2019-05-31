@@ -39,7 +39,7 @@ export class Ng2SearchPipe implements PipeTransform {
             return true;
           }
         }
-        if (item[property].toString().toLowerCase().includes(toCompare)) {
+        else if (item[property].toString().toLowerCase().includes(toCompare)) {
           return true;
         }
       }
