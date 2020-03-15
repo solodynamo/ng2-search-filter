@@ -40,7 +40,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 export class AppModule {}
 ```
 
-And use pipe in your component
+And use pipe in your component after declaring and initializing it in your component:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -62,6 +62,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   items: string[] = [{ name: "archie" }, { name: "jake" }, { name: "richard" }];
+  term = '';
 }
 ```
 
