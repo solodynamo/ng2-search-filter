@@ -26,8 +26,14 @@ describe('Pipe: Default', () => {
     });
 
     it('Filter the nested object', () => {
-        const list = [{ a: 'e' }, { a: { b: 'e' , c: { b : 'd' }}}];
-        expect(pipe.transform(list, 'd')).toEqual([{ a: { b: 'e', c: { b : 'd' }}}]);
+        const list = [{ a: 'e' }, { a: { b: 'e', c: { b: 'd' } } }];
+        expect(pipe.transform(list, 'd')).toEqual([{ a: { b: 'e', c: { b: 'd' } } }]);
+    });
+
+    it('Filter the array of strings', () => {
+        const list = ['a', 'b', 'c'];
+        expect(pipe.transform(list, 'd')).toEqual([]);
+        expect(pipe.transform(list, 'b')).toEqual(['b']);
     });
 
     it('Ignore the property in the search', () => {

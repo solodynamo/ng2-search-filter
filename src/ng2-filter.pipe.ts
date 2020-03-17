@@ -30,6 +30,11 @@ export class Ng2SearchPipe implements PipeTransform {
     const toCompare = term.toLowerCase();
 
     function checkInside(item: any, term: string) {
+      
+      if (typeof item === "string" && item.toString().toLowerCase().includes(toCompare)) {
+        return true;
+      }
+
       for (let property in item) {
         if (item[property] === null || item[property] == undefined || excludes.includes(property)) {
           continue;
