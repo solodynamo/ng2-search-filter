@@ -32,7 +32,7 @@ describe('Pipe: Default', () => {
 
     it('Filter the array of strings', () => {
         const list = ['a', 'b', 'c'];
-        expect(pipe.transform(list, 'd')).toEqual(['']);
+        expect(pipe.transform(list, 'd')).toEqual([]);
         expect(pipe.transform(list, 'b')).toEqual(['b']);
     });
 });
