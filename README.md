@@ -1,11 +1,11 @@
-# Angular 2 / Angular 4 / Angular 5 Search Filter Pipe
+# Angular 2 / Angular 4 / Angular 5 and above(v6,v7,v8,v9,v10) Search Filter Pipe
 
 [![npm version](https://img.shields.io/badge/version-0.4.0-blue.svg)](https://www.npmjs.com/package/ng2-search-filter) [![](https://david-dm.org/solodynamo/ng2-search-filter.svg)](https://www.npmjs.com/package/ng2-search-filter)
 [![](https://img.shields.io/badge/downloads-24K%2B-red.svg)](https://www.npmjs.com/package/ng2-search-filter)
 
 > Filter search items
 
-Angular 2 filter to make custom search. Works with Angular 4 and Angular 5 too.
+Angular 2 filter to make custom search. Works with Angular 4, Angular 5 and above versions(v6,v7,v8,v9,v10) too. It can be used for searching in Ionic Framework v5.
 
 ![demo-image](http://i.imgur.com/dI5Mzvq.gif)
 
